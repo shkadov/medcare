@@ -1,0 +1,71 @@
+<html>
+
+
+
+<head>
+<style type="text/css">
+#DataDiv {
+  height:110px;
+  width:122px;
+  border-bottom: 1px solid grey;
+  border-left: 1px solid grey;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+#DataTable {
+  table-layout:fixed;
+  border-collapse:collapse;
+  width:105px;
+  font-family:Arial,sans-serif;
+  font-size:10pt;    
+}
+td {
+  border-top: 1px solid grey;
+  border-right: 1px solid grey;
+  padding-left: 2px;
+}
+td:first-child { 
+  text-align: center;
+  padding-top: 2px;
+}
+</style>
+</head>
+
+<body>
+<form name="form1" action="" method="post">
+<div id="DataDiv">
+  <table cellpadding="0" id="DataTable">
+    <col width=35> <col width=70>
+
+
+Something check:
+<input type="checkbox" name="cb1" id="check1" value="1" checked />
+<input type="checkbox" name="cb2" id="check2" value="2" />
+<input type="checkbox" name="cb3" id="check3" value="3" />
+</table>
+  </div>
+
+
+Something input: <br> <input type="text" name="user" size=20 maxlength="10"/><br>
+
+
+<form action="select1.php" method="post">
+   <p><select size="3" multiple name="hero[]">
+    <option disabled>Something</option>
+    <option value="smth1">smth1</option>
+    <option selected value="smth2">smth2</option>
+    <option value="smth3">smth3</option>
+    <option value="smth4">smth4</option>
+   </select></p>
+   <p><input type="submit" value="Send"></p>
+   
+
+
+
+<p></p><input type="reset" value="Reset" /></p>
+
+</form>
+
+</body>
+
+</html>
